@@ -1,9 +1,13 @@
 import random
+start = input('請輸入隨機數字範圍開始值: ')
+end = input('請輸入隨機數字範圍結束值: ')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 while True:
-	count = count + 1 #
+	count = count + 1 #可以寫成count += 1
 	num = input('請猜數字: ')
 	num = int(num)
 	if num == r:
